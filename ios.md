@@ -2,7 +2,7 @@
 description: 一些基础特性
 ---
 
-# 特性
+# 基础特性
 
 ## 判断为空
 
@@ -59,7 +59,7 @@ fun A.printC() {
 }
 ```
 
-简单的封装
+简单的封装-必看
 
 [https://github.com/nb312/Kotlin-Extension](https://github.com/nb312/Kotlin-Extension)
 
