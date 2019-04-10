@@ -103,6 +103,62 @@ class B(a:Int):A(a){
     }
 ```
 
+## 文件
+
+在JAVA中一个java文件一般对于一个类，方法及变量是不能独立于类而存在。但是在kotlin中一个文件可以包含变量，方法，类，接口，比较随意
+
+```kotlin
+var height: Int = 100
+fun speakName() {
+    println("The height of the room is $height")
+}
+
+class Room {
+    var name: String = "ShangHai"
+    var w: Int = 0
+    var h: Int = 0
+}
+
+interface ISell {
+    fun onSelling()
+}
+```
+
+## 静态实现
+
+关键词，在java中我们经常会用到工具类调用一些静态方法或者是变量，但是在kotlin中没有静态的概念，但是可以利用关键词object达到相应的效果，本质上这是一个单例，而不同于
+
+```kotlin
+object CommonUtil {
+    var name: String = "niebin"
+    fun getAge(): Int {
+        return 18
+    }
+}
+fun test() {
+    println("name is ${CommonUtil.name} and age is ${CommonUtil.getAge()}")
+}
+```
+
+如果是类，则可以使用  `companion object` 
+
+```kotlin
+class Room {
+    var name: String = "ShangHai"
+    var w: Int = 0
+    var h: Int = 0
+
+    companion object {
+        var address: String = "China"
+        //这里还可以定义方法，属性
+    }
+}
+
+fun test() {
+    println("The address of your room is ${Room.address}")
+}
+```
+
 
 
 
