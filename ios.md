@@ -63,6 +63,12 @@ fun A.printC() {
 
 [https://github.com/nb312/Kotlin-Extension](https://github.com/nb312/Kotlin-Extension)
 
+```java
+  preferences = DuApplication.getInstance().getApplicationContext().getSharedPreferences("videoCache", Context.MODE_PRIVATE);
+              SPUtils.put(this, SPStaticKey.MESSAGE_NOTICE_LIVE, true);
+
+```
+
 #### 3. 方法作为参数
 
 方法可以作为方法的参数或者返回值
